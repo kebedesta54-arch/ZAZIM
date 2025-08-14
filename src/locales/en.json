@@ -1,0 +1,38 @@
+{
+  "brand": "ZAZIM — Smart, reliable moving services.",
+  "cta": "Get a fast quote",
+  "sub": "We save you time, money, and stress. Only vetted, insured professionals — with full responsibility and optional insurance (+10%).",
+  "values": {
+    "v1": "Transparent & vetted suppliers",
+    "v2": "Professional crews and scheduling",
+    "v3": "Full responsibility & optional insurance (+10%)",
+    "v4": "We negotiate for you",
+    "v5": "Human support, zero surprises"
+  },
+  "steps": {
+    "t": "How it works",
+    "s1": "Sign up & request — text/images/video/audio + pickup/drop-off details",
+    "s2": "ZAZIM verifies & negotiates — collects quotes from vetted suppliers",
+    "s3": "You receive approved quotes",
+    "s4": "Approve & pay — optional transfer insurance (+10%)",
+    "s5": "Chat opens between you and the supplier (after payment)",
+    "s6": "Move with peace of mind — full responsibility & support"
+  },
+  "promise": "Reliability. Professionalism. Responsibility.",
+  "banner": "Fair, transparent, and time-saving — ZAZIM negotiates and filters; you choose the best fit. Insurance available (+10%).",
+  "nav": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "ui": {
+    "dark": "Dark",
+    "light": "Light",
+    "lang": "Language"
+  },
+  "contact": {
+    "title": "Contact us",
+    "send": "Send",
+    "sending": "Sending...",
+    "thanks": "Thanks! We'll be in touch."
+  }
+}
