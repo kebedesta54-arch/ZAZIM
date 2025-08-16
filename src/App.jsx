@@ -1,4 +1,5 @@
-// src/App.jsx
+// src/App.jsxfeat: add pages (Home/Diagnostics/Movers/Contact) and top navbar links
+
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import NavBar from './components/NavBar';

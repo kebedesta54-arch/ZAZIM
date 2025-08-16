@@ -1,38 +1,57 @@
 {
-  "brand": "ZAZIM — Smart, reliable moving services.",
-  "cta": "Get a fast quote",
-  "sub": "We save you time, money, and stress. Only vetted, insured professionals — with full responsibility and optional insurance (+10%).",
-  "values": {
-    "v1": "Transparent & vetted suppliers",
-    "v2": "Professional crews and scheduling",
-    "v3": "Full responsibility & optional insurance (+10%)",
-    "v4": "We negotiate for you",
-    "v5": "Human support, zero surprises"
+  "common": {
+    "brand": "Zazim Movers Hub",
+    "languageNames": { "he": "Hebrew", "en": "English", "ru": "Russian", "ar": "Arabic" },
+    "nav": { "home": "Home", "diagnostics": "Diagnostics", "movers": "Movers", "contact": "Contact" },
+    "buttons": { "submit": "Submit", "send": "Send", "getStarted": "Get Started", "learnMore": "Learn More", "save": "Save", "close": "Close" },
+    "form": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "required": "This field is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid phone number",
+      "successTitle": "Form submitted!",
+      "successBody": "We’ll get back to you shortly with all the details."
+    }
   },
-  "steps": {
-    "t": "How it works",
-    "s1": "Sign up & request — text/images/video/audio + pickup/drop-off details",
-    "s2": "ZAZIM verifies & negotiates — collects quotes from vetted suppliers",
-    "s3": "You receive approved quotes",
-    "s4": "Approve & pay — optional transfer insurance (+10%)",
-    "s5": "Chat opens between you and the supplier (after payment)",
-    "s6": "Move with peace of mind — full responsibility & support"
+  "home": {
+    "title": "Zazim Movers Hub",
+    "subtitle": "Move smart, move with confidence",
+    "description": "A smart platform connecting customers, movers, and partners with full transparency and care. Expect fair quotes, clear timelines, and personal support from start to finish.",
+    "cta": "Get Started",
+    "seo": {
+      "metaTitle": "Zazim Movers Hub — Smart Moving Solutions",
+      "metaDescription": "Plan your move with confidence: transparent quotes, vetted movers, and personal support."
+    }
   },
-  "promise": "Reliability. Professionalism. Responsibility.",
-  "banner": "Fair, transparent, and time-saving — ZAZIM negotiates and filters; you choose the best fit. Insurance available (+10%).",
-  "nav": {
-    "home": "Home",
-    "contact": "Contact"
+  "diagnostics": {
+    "title": "Move Diagnostics & Planning",
+    "intro": "Every successful move starts with a clear plan. We assess scope, access constraints, logistics, and timelines—then build the right plan for you.",
+    "features": {
+      "survey": "Fast and accurate needs assessment",
+      "inventory": "Detailed inventory & volume mapping",
+      "timeline": "Clear and realistic timeline",
+      "risk": "Risk identification and mitigation"
+    }
   },
-  "ui": {
-    "dark": "Dark",
-    "light": "Light",
-    "lang": "Language"
+  "movers": {
+    "title": "Vetted Movers & Trusted Partners",
+    "intro": "We work with reliable movers held to high professional standards. All partners are evaluated for performance, customer experience, and safety.",
+    "trust": "Full transparency in pricing and process—no surprises.",
+    "cta": "Request a Quote"
   },
   "contact": {
-    "title": "Contact us",
-    "send": "Send",
-    "sending": "Sending...",
-    "thanks": "Thanks! We'll be in touch."
+    "title": "Contact Us",
+    "intro": "Tell us about your move and we’ll respond quickly with the best options.",
+    "placeholders": { "name": "Full Name", "email": "name@example.com", "phone": "+1 555 555 5555", "message": "How can we help?" },
+    "success": "Thanks! Your message was received. We’ll be in touch soon.",
+    "error": "Something went wrong. Please try again in a moment."
+  },
+  "footer": {
+    "rights": "All rights reserved © Zazim Movers Hub",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

@@ -1,33 +1,39 @@
-// src/components/NavBar.jsx
-import { NavLink } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
+  const { t, i18n } = useTranslation("common");
+
+  const changeLang = (lng) => i18n.changeLanguage(lng);
+
   const linkStyle = ({ isActive }) => ({
-    textDecoration: 'none',
-    padding: '8px 10px',
+    padding: "8px 12px",
+    textDecoration: "none",
     borderRadius: 8,
-    fontSize: 14,
-    color: isActive ? '#1d4ed8' : '#334155',
-    background: isActive ? 'rgba(29,78,216,0.08)' : 'transparent',
+    background: isActive ? "#e7f0ff" : "transparent",
   });
 
   return (
-    <div style={{
-      position: 'sticky',
-      top: 0,
-      background: '#fff',
-      borderBottom: '1px solid #e5e7eb',
-      padding: '10px 16px',
-      display: 'flex',
-      gap: 12,
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-      <strong style={{ marginRight: 'auto', fontSize: 16 }}>Zazim</strong>
-      <NavLink to="/" style={linkStyle}>Home</NavLink>
-      <NavLink to="/diagnostics" style={linkStyle}>Diagnostics</NavLink>
-      <NavLink to="/movers" style={linkStyle}>Movers</NavLink>
-      <NavLink to="/contact" style={linkStyle}>Contact</NavLink>
-    </div>
+    <header style={{ display: "flex", gap: 12, padding: 12, alignItems: "center", borderBottom: "1px solid #eee" }}>
+      <div style={{ fontWeight: 700 }}>{t("brand")}</div>
+
+      <nav style={{ display: "flex", gap: 8 }}>
+        <NavLink to="/" style={linkStyle}>{t("nav.home")}</NavLink>
+        {/* <NavLink to="/diagnostics" style={linkStyle}>{t("nav.diagnostics")}</NavLink>
+        <NavLink to="/movers" style={linkStyle}>{t("nav.movers")}</NavLink>
+        <NavLink to="/contact" style={linkStyle}>{t("nav.contact")}</NavLink> */}
+      </nav>
+
+      <div style={{ marginLeft: "auto", display: "flex", gap: 8 }}>
+        <button onClick={() => changeLang("he")}>עברית</button>
+        <button onClick={() => changeLang("en")}>English</button>
+        <button onClick={() => changeLang("ru")}>Рус</button>
+        <button onClick={() => changeLang("ar")}>عربي</button>
+      </div>
+    </header>
   );
 }
+const { t } = useTranslation("common");
+// ...
+{t("nav.home")}
+<NavLink to="/admin" className={linkClass}>אדמין</NavLink>

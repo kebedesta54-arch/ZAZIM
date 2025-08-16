@@ -1,15 +1,23 @@
-import React from 'react';
-
+import { useTranslation } from "react-i18next";
+import Layout from "../components/layout";
 export default function Diagnostics() {
+  const { t } = useTranslation();
+
   return (
-    <main style={{ maxWidth: 960, margin: '40px auto', padding: '0 16px' }}>
-      <h1>Diagnostics</h1>
-      <p>Here you can run vehicle or moving equipment diagnostics.</p>
-      <ul style={{ lineHeight: '2' }}>
-        <li>Check truck status</li>
-        <li>Review equipment condition</li>
-        <li>Generate maintenance reports</li>
-      </ul>
-    </main>
+    <Layout>
+      <div className="max-w-3xl">
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">{t("diagnostics.title")}</h1>
+        <p className="mt-2 text-slate-700">{t("diagnostics.intro")}</p>
+
+        <h3 className="mt-5 font-bold">{t("diagnostics.list_title")}</h3>
+        <ul className="mt-2 list-disc ps-5 text-slate-700">
+          {t("diagnostics.list", { returnObjects: true }).map((item, i) => (
+            <li key={i} className="mb-1">{item}</li>
+          ))}
+        </ul>
+
+        <a href="/contact" className="btn-primary mt-5 inline-flex">{t("diagnostics.cta")}</a>
+      </div>
+    </Layout>
   );
 }

@@ -44,3 +44,10 @@ export default function Home(){
     </div>
   )
 }
+const { t } = useTranslation(["home", "common"]);
+// ...
+<div>
+  <h1>{t("home:title")}</h1>
+  <p>{t("home:description")}</p>
+  <button>{t("home:cta")}</button>
+</div>

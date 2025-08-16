@@ -1,15 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// src/pages/Home.jsx
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation(["home", "common"]);
+
   return (
-    <main style={{ padding: '2rem 0' }}>
-      <h1>Zazim Movers Hub</h1>
-      <ul>
-        <li><Link to="/diagnostics">Diagnostics</Link></li>
-        <li><Link to="/movers">Movers</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </main>
+    <section style={{ maxWidth: 880, margin: "48px auto", textAlign: "center" }}>
+      <h1 style={{ marginBottom: 12 }}>{t("home:title")}</h1>
+      <p style={{ marginBottom: 24 }}>{t("home:description")}</p>
+      <button style={{ padding: "10px 16px", borderRadius: 8 }}>{t("home:cta")}</button>
+    </section>
   );
 }

@@ -29,5 +29,9 @@ export default defineConfig({
     })
   ],
   build: { outDir: 'dist', sourcemap: true },
-  server: { port: 5173 }
-})
+  server: { 
+    port: 5173,
+    hmr: { overlay: true }
+  }
+});
+

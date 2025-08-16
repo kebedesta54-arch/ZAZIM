@@ -1,0 +1,34 @@
+{
+  "common": {
+    "brand": "Zazim – Movers Hub",
+    "nav": {
+      "home": "Home",
+      "diagnostics": "Diagnostics",
+      "movers": "Movers",
+      "contact": "Contact"
+    },
+    "languageNames": {
+      "he": "עברית",
+      "en": "English",
+      "ru": "Русский",
+      "ar": "العربية"
+    }
+  },
+  "home": {
+    "title": "Smart moving service — simple, safe, and cost‑effective",
+    "description": "We handle the entire moving process for you — needs assessment, fair quotes, vendor vetting, and negotiation to secure the best outcome.",
+    "cta": "Leave details to get started"
+  },
+  "diagnostics": {
+    "title": "Fast needs diagnostics",
+    "description": "Tell us what you need to move, from where and to where — we’ll take it from there."
+  },
+  "movers": {
+    "title": "Verified movers only",
+    "description": "We work exclusively with rated providers with insurance and proper certifications."
+  },
+  "contact": {
+    "title": "Let’s talk",
+    "description": "We’ll gladly answer any question and provide a firm quote after review."
+  }
+}
